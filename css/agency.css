@@ -201,12 +201,12 @@ body{
 		img::selection{background:0 0}img::-moz-selection{background:0 0}body{webkit-tap-highlight-color:#fed136}
 		
 		
-.container_shaded{
+.logo_margin{
 	
-	font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:italic;font-size:14px;
-	background-color: #fff; 
-	opacity: 0.8;	
-
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }		
 		
 .container-new {
