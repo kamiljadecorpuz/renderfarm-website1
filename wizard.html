@@ -30,7 +30,74 @@
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		
+		  <script>
+            $(document).ready(function () {
+                $.post('ajax.php', {task: 'getSoft'}, function (res) {
+                    var data = $.parseJSON(res);
+                    $('#soft-list').html(data.html);
+                });
+            });
+
+            var getRating = function () {
+
+                var paramObj = {};
+                $.each($('#farmForm').serializeArray(), function (_, kv) {
+                    if (paramObj.hasOwnProperty(kv.name)) {
+                        paramObj[kv.name] = $.makeArray(paramObj[kv.name]);
+                        paramObj[kv.name].push(kv.value);
+                    }
+                    else {
+                        paramObj[kv.name] = kv.value;
+                    }
+                });
+
+                paramObj.task = 'getRating';
+
+                $.post('ajax.php', paramObj, function (res) {
+                    var data = $.parseJSON(res);
+                    $('#rating').html(data.html);
+                });
+            };
+			
+			
+			function price() {
+			   document.getElementById('hover_explanation').innerHTML = "* Lowest priority price/per GHz-hour<br><br>" +
+			   "* Medium priority price/per GHz-hour<br><br>" +
+			   "* Highest priority price/per GHz-hour<br><br>"
+				 ;
+
+			}
+			function availability() {
+			   document.getElementById('hover_explanation').innerHTML = "How many nodes are available to the clients, are there queues"
+				 ;
+
+			}
+			
+			
+			function TutorialsFAQHelp() {
+			   document.getElementById('hover_explanation').innerHTML = "Availability of video tutorial, quality of manuals and help sections on web page"
+				 ;
+
+			}
+			
+			function supportContact() {
+			   document.getElementById('hover_explanation').innerHTML = "Quality of support team, availability and level of professionalism"
+				 ;
+
+			}
+			
+			function usability(){
+			   document.getElementById('hover_explanation').innerHTML = "Subjective overall user's experience, extra features, automation"
+				 ;
+
+			}
+
+			function normal() {
+				document.getElementById('hover_explanation').innerHTML = 
+				"Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.";
+			}
+        </script>
+
 
 
 	</head>
@@ -100,7 +167,7 @@
 						
 					<div class="container list-inline"  style="margin-top:50px;">
 						
-							<div class="col-lg-3">
+							<div class="col-lg-3" >
 						
 								<form class="navbar-form" role="search">
 									<div class="input-group">
@@ -145,28 +212,21 @@
 								<button class="btn btn-warning btn-sm">Read more</button>
 								</div>
 								
-						</div>
+							</div>
+
+						
 						<div class="col-lg-9 ">
 						
-					
 						
-						
-						
-							<div  id="diplayBlog">
-					
-					
-								<div class=" well" >
-							 
-								
-									 
-									 
-									  
-									  
+							<div  id="farmWizard">
+							
+								<div class=" well" > 
+								<img src="img/farmy.png" class="img-thumbnail">
 										<h2>Farm For you wizard!</h2>
 										<hr>
-										<form action="">
+									<form id="farmForm" action="">
 										<div class="row">
-											<div class="col-lg-3">
+											<div class="col-lg-5">
 													<h5> Choose your 3D Software:</h5> 
 													
 													<input type="checkbox" name="vehicle" value="Bike"> 3ds Max<br>
@@ -175,37 +235,61 @@
 													<input type="checkbox" name="vehicle" value="Car"> Lightwave 3d<br>
 													<input type="checkbox" name="vehicle" value="Car"> Cinema 4d<br>
 													<input type="checkbox" name="vehicle" value="Car"> Blender<br> 
-														
-													
-													
 											</div>
-											<div class="col-lg-5">
+											
+											<div class="col-lg-6">
 													<h5> Choose the priority of your render:</h5> 
 												
 														
 													<input type="radio" name="priority" value="high"> <strong>High</strong> - when you are in hurry and time is more valuable than money<br>
 													<input type="radio" name="priority" value="medium"> <strong>Medium</strong> - when you have deadlines, but budget is tight<br>
 													<input type="radio" name="priority" value="low"> <strong>Low</strong> - when you you have time and dont want to overpay
+													<br /><br />
+											</div>
+											
+											
+											<div class="col-lg-5">
+													<h5> What is important for you:</h5> 
+												
+													<b onmouseover="price()" onmouseout="normal()">Price:</b><br/>
+													<input type="radio" class="star" name="price" value="0.10" /><input type="radio" class="star" name="price" value="0.20" /><input type="radio" class="star" name="price" value="0.30" /><input type="radio" class="star" name="price" value="0.40" /><input type="radio" class="star" name="price" value="0.50" /><br/><br/>
+
+													<b  onmouseover="availability()" onmouseout="normal()">Availability:</b><br/>
+													<input type="radio" class="star" name="cp" value="0.10" /><input type="radio" class="star" name="cp" value="0.20" /><input type="radio" class="star" name="cp" value="0.30" /><input type="radio" class="star" name="cp" value="0.40" /><input type="radio" class="star" name="cp" value="0.50" /><br/><br/>
+
+													<b onmouseover="TutorialsFAQHelp()" onmouseout="normal()">Tutorials/FAQ/Help section:</b><br/>
+													<input type="radio" class="star" name="faq" value="0.10" /><input type="radio" class="star" name="faq" value="0.20" /><input type="radio" class="star" name="faq" value="0.30" /><input type="radio" class="star" name="faq" value="0.40" /><input type="radio" class="star" name="faq" value="0.50" /><br/><br/>
+
+													<b onmouseover="supportContact()" onmouseout="normal()">Human support/contact:</b><br/>
+													<input type="radio" class="star" name="support" value="0.10" /><input type="radio" class="star" name="support" value="0.20" /><input type="radio" class="star" name="support" value="0.30" /><input type="radio" class="star" name="support" value="0.40" /><input type="radio" class="star" name="support" value="0.50" /><br/><br/>
+
+													<b onmouseover="usability()" onmouseout="normal()">Usability:</b><br/>
+													<input type="radio" class="star" name="fetures" value="0.10" /><input type="radio" class="star" name="fetures" value="0.20" /><input type="radio" class="star" name="fetures" value="0.30" /><input type="radio" class="star" name="fetures" value="0.40" /><input type="radio" class="star" name="fetures" value="0.50" /><br/><br/>
+													<input onclick="(function () {
+																
+																getRating();
+															})()" type="button" value="SUBMIT" class="btn btn-default"/>
+
 													
 											</div>
 											
-											<div class="col-lg-3">
-													<h5> What is important for you:</h5> 
-												
-													<input type="checkbox" name="vehicle" value="Bike"> 3ds Max<br>
-													<input type="checkbox" name="vehicle" value="Car"> Maya<br>
-													<input type="checkbox" name="vehicle" value="Car"> Softimage<br>
-													<input type="checkbox" name="vehicle" value="Car"> Lightwave 3d<br>
-													<input type="checkbox" name="vehicle" value="Car"> Cinema 4d<br>
-													<input type="checkbox" name="vehicle" value="Car"> Blender<br> 
+											
+											<div id="rating"></div>
+										
+													<div class="col-lg-6">
+														<hr>
+														<div id="hover_explanation">
 														
-													<input type="radio" name="gender" value="male"> Male<br>
-													<input type="radio" name="gender" value="female"> Female<br>
-													<input type="radio" name="gender" value="other"> Other
-													
-											</div>
+														
+														<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+														Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+														</p>
+														</div>
+													</div>
+									
+
 										</div>
-										</form>
+									</form>
 										<hr>
 										
 										<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
@@ -214,10 +298,7 @@
 										<button class="btn btn-default btn-lg" onClick="SpecificBlog()">Read more</button>
 							
 								</div>
-					
-					
 							</div>
-					
 						</div>
 							
 			</div>
@@ -442,6 +523,11 @@
 
 		<!-- Custom Theme JavaScript -->
 		<script src="js/agency.js"></script>
+
+		
+		<script src='https://jquery-star-rating-plugin.googlecode.com/svn/trunk/jquery.js' type="text/javascript"></script>
+	<script src='https://jquery-star-rating-plugin.googlecode.com/svn/trunk/jquery.rating.js' type="text/javascript" language="javascript"></script>
+	<link href='https://jquery-star-rating-plugin.googlecode.com/svn/trunk/jquery.rating.css' type="text/css" rel="stylesheet"/>	
 
 	</body>
 
