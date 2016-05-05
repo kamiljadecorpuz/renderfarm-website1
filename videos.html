@@ -101,23 +101,13 @@
 					<div class="container list-inline"  style="margin-top:50px;">
 						
 							<div class="col-lg-3">
-						
-								<form class="navbar-form" role="search">
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-											<div class="input-group-btn">
-												<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-											</div>
-									</div>	
-								</form>
-								
-								<br />
+
 								<h4>Topics</h4>
 									
 								<div class="list-group">
 								 
-								  <a href="#" class="list-group-item"><span class="badge">12</span>Registering</a>
-								  <a href="#" class="list-group-item"><span class="badge">5</span>Downloading and installing farm's software</a>
+								  <a href="#" class="list-group-item" onClick="registering()"><span class="badge">12</span>Registering</a>
+								  <a href="#" class="list-group-item" onClick="download_install()"><span class="badge">5</span>Downloading and installing farm's software</a>
 								  <a href="#" class="list-group-item"><span class="badge">1</span>Uploading project</a>
 								  <a href="#" class="list-group-item"><span class="badge">3</span>Using WebManager</a>
 								  <a href="#" class="list-group-item"><span class="badge">9</span>Downloading frames</a>
@@ -135,23 +125,7 @@
 								</div>
 								
 								
-								<div class="alert well_2">
-								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><br />
-								
-								<h4> Related News</h4> 
-								<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								</p>
-								<button class="btn btn-warning btn-sm">Read more</button>
-								</div>
-								
-								<div class=" alert well_2">
-								<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><br />
-								<h4> Related News</h4> 
-								<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								</p>
-								<button class="btn btn-warning btn-sm">Read more</button>
-								</div>
-								
+							
 						</div>
 						<div class="col-lg-9 ">
 						
@@ -166,120 +140,250 @@
 								document.getElementById('diplayBlog').hidden = true; 
 								document.getElementById('blog1').hidden = false; 
 								}
+								
+								function registering(){
+								document.getElementById('download_install').hidden = true; 
+								document.getElementById('registering').hidden = false; 
+								}
+								
+								function download_install(){
+								document.getElementById('registering').hidden = true; 
+								document.getElementById('download_install').hidden = false; 
+								
+								}
+								
+								
+								
 						</script>
 						
 						
-						<div id="blog1" hidden>
-						<div class=" well" >
-							 
-							 <a href="#" class="close" onClick="showBlogs()" data-dismiss="alert" aria-label="close">&times;</a>
-							 
-							 
-							  
-							  
-							  <img src="img/portfolio/dreams.png" alt="Flower">
-								<h4>NEW RENDERFARM.GUIDE - COMING SOON!</h4>
-								<caption> January 1, 2016 | RenderFarm</caption> 
-								<br>
-								
-								<span class="label label-primary">Primary Label</span>
-								<span class="label label-success">Success Label</span>
-								<span class="label label-info">Info Label</span>
-								<span class="label label-warning">Warning Label</span>
-								<span class="label label-danger">Danger Label</span>
-								
-								 <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-google-plus"></i>&nbsp;</a>
-							  <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-instagram"></i>&nbsp;</a>
-							  <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-twitter"></i>&nbsp;</a>
-							  <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-facebook"></i>&nbsp;</a>
-								<hr>
-								<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								</p>
-								
-								<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								</p>
-								
-								<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								</p>
-								
-								<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								</p>
-								
-								 <img src="img/portfolio/escape.png" alt="Flower">
 						
-						</div>
-						</div>
-						<br />
-						<div class="row ">
-							<div class="col-sm-4">
-									<br />
-									<p>GarageFarm - Register Process</p>
-									 <div class="embed-responsive embed-responsive-16by9">	
-										<iframe  src="https://www.youtube.com/embed/Yiz__efKJ90?list=PLEmqqP3UwljM3lX1T_q0a1JfFUiFNsG17" frameborder="0" allowfullscreen></iframe>
-									</div>
-								
-							</div>
-							<div class="col-sm-4">
-								<br />
-								<p>Rebus Farm - Register Process</p>
-									<div class="embed-responsive embed-responsive-16by9">	
-										<iframe src="https://www.youtube.com/embed/pNUtTUlXEkE?list=PLEmqqP3UwljM3lX1T_q0a1JfFUiFNsG17" frameborder="0" allowfullscreen></iframe>
-									</div>		
-										
-							</div>
-							
-							<div class="col-sm-4">
-								<br />
-								<p>Rayvision - Register Process</p>
-									<div class="embed-responsive embed-responsive-16by9">	
-										<iframe  src="https://www.youtube.com/embed/QT3mP_WNXuE?list=PLEmqqP3UwljM3lX1T_q0a1JfFUiFNsG17" frameborder="0" allowfullscreen></iframe>
-									</div>		
-										
-							</div>
-							
-							<div class="col-sm-4">
-								<br />
-									<p>GarageFarm - Download & Install</p>
-									 <div class="embed-responsive embed-responsive-16by9">	
-										<iframe src="https://www.youtube.com/embed/-zEclu9pksk?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
-									</div>
-								
-							</div>
-							<div class="col-sm-4">
-								<br />
-								<p>Rebus Farm - Download & Install</p>
-									<div class="embed-responsive embed-responsive-16by9">	
-										<iframe src="https://www.youtube.com/embed/pbvfubFaEkE?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
-									</div>		
-										
-							</div>
-							
-							<div class="col-sm-4">
-								<br />
-								<p>GarageFarm - Download & Install</p>
-									<div class="embed-responsive embed-responsive-16by9">	
-										<iframe src="https://www.youtube.com/embed/DQzxckFwLPg?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
-									</div>		
-										
-							</div>
-						</div>	
 						
-						<div class="text-center">
-						<ul class="pagination">
-							  <li  class="active"><a href="#">1</a></li>
-							  <li><a href="#">2</a></li>
-							  <li><a href="#">3</a></li>
-							  <li><a href="#">4</a></li>
-							  <li><a href="#">5</a></li>
-							</ul>	
-						</div>	
+						
+							
+							<div class="well_white" >
+							
+								<div class="row ">
+								
+									<div class="col-lg-12">
+												<div class="col-lg-5 text-center">
+													<h1 class="text-muted">Video Results</h1>
+												</div>
+												
+												<div class="col-lg-7 text-right">
+													<h3>
+													<form class="navbar-form" role="search">
+														<div class="input-group">
+															<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+																<div class="input-group-btn">
+																	<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+																</div>
+														</div>	
+													</form>
+													</h3>
+												</div>
+											<div class="col-lg-12">
+											<hr>
+											</div>
+									</div>
+									
+<!-- -------------------------------------------------registering-->										
+									
+									<div  id="registering" hidden>
+										<div class="col-lg-12" >
+											<div class="col-lg-4">
+												 <div class="embed-responsive embed-responsive-16by9">	
+													<iframe  src="https://www.youtube.com/embed/Yiz__efKJ90?list=PLEmqqP3UwljM3lX1T_q0a1JfFUiFNsG17" frameborder="0" allowfullscreen></iframe>
+												</div>
+											</div>
+											
+											<div class="col-lg-6">
+											
+												<p>GarageFarm - Register Process</p>
+												<caption>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+											
+												</caption>
+											</div>
+										</div>
+										
+										<div class="col-lg-12"><br></div>
+										
+										<div class="col-lg-12">
+											<div class="col-lg-4">
+													<div class="embed-responsive embed-responsive-16by9">	
+														<iframe src="https://www.youtube.com/embed/pNUtTUlXEkE?list=PLEmqqP3UwljM3lX1T_q0a1JfFUiFNsG17" frameborder="0" allowfullscreen></iframe>
+													</div>		
+											</div>
+											
+											<div class="col-lg-6">
+											
+												<p>Rebus Farm - Register Process</p>
+												<caption>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+											
+												</caption>
+											</div>
+										</div>
+										
+										<div class="col-lg-12"><br></div>
+										
+										<div class="col-lg-12">
+											<div class="col-lg-4">
+													<div class="embed-responsive embed-responsive-16by9">	
+														<iframe  src="https://www.youtube.com/embed/QT3mP_WNXuE?list=PLEmqqP3UwljM3lX1T_q0a1JfFUiFNsG17" frameborder="0" allowfullscreen></iframe>
+													</div>		
+											</div>
+											
+											<div class="col-lg-6">			
+												<p>Rayvision - Register Process</p>
+												<caption>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+											
+												</caption>
+											</div>
+										</div>
+										
+										<div class="col-lg-12 text-center alert-default">
+											<hr>
+											<a href="#" class="btn-block"><h5>Show more &nbsp;&nbsp;<span class="caret"></span></h5></a>
+											
+										</div>
+									</div>	
+									
+<!-- -------------------------------------------------download_install-->									
+								<div id="download_install" hidden>
+										
+										<div class="col-lg-12">
+											<div class="col-lg-4">
+											
+													 <div class="embed-responsive embed-responsive-16by9">	
+														<iframe src="https://www.youtube.com/embed/-zEclu9pksk?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
+													</div>
+											</div>
+											
+											<div class="col-lg-6">			
+												<p>GarageFarm - Download & Install</p>
+												<caption>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+													
+												</caption>
+											</div>
+										</div>	
+									
+									<div class="col-lg-12"><br></div>
+									
+									<div class="col-lg-12">
+										<div class="col-lg-4">
+											<div class="embed-responsive embed-responsive-16by9">	
+												<iframe src="https://www.youtube.com/embed/pbvfubFaEkE?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
+											</div>			
+										</div>
+									
+										<div class="col-lg-6">			
+											<p>Rebus Farm - Download & Install</p>
+											<caption>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+											
+											</caption>
+										</div>
+									</div>	
+									
+								
+								<div class="col-lg-12"><br></div>
+								
+									<div class="col-lg-12">
+										<div class="col-lg-4">
+												<div class="embed-responsive embed-responsive-16by9">	
+													<iframe src="https://www.youtube.com/embed/DQzxckFwLPg?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
+												</div>		
+													
+										</div>
+									
+										<div class="col-lg-6">			
+											<p>Rayvision- Download & Install</p>
+											<caption>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+												
+											</caption>
+										</div>
+									</div>										
+									
+									<div class="col-lg-12 text-center alert-default">
+											<hr>
+											<a href="#" class="btn-block"><h5>Show more &nbsp;&nbsp;<span class="caret"></span></h5></a>
+											
+										</div>
+									
+								</div>		
+<!-- -------------------------------------------------uploading_project-->
+							<div id="uploading_project" hidden>
+										
+										<div class="col-lg-12">
+											<div class="col-lg-4">
+											
+													 <div class="embed-responsive embed-responsive-16by9">	
+														<iframe src="https://www.youtube.com/embed/-zEclu9pksk?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
+													</div>
+											</div>
+											
+											<div class="col-lg-6">			
+												<p>GarageFarm - Download & Install</p>
+												<caption>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+													
+												</caption>
+											</div>
+										</div>	
+									
+									<div class="col-lg-12"><br></div>
+									
+									<div class="col-lg-12">
+										<div class="col-lg-4">
+											<div class="embed-responsive embed-responsive-16by9">	
+												<iframe src="https://www.youtube.com/embed/pbvfubFaEkE?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
+											</div>			
+										</div>
+									
+										<div class="col-lg-6">			
+											<p>Rebus Farm - Download & Install</p>
+											<caption>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+											
+											</caption>
+										</div>
+									</div>	
+									
+								
+								<div class="col-lg-12"><br></div>
+								
+									<div class="col-lg-12">
+										<div class="col-lg-4">
+												<div class="embed-responsive embed-responsive-16by9">	
+													<iframe src="https://www.youtube.com/embed/DQzxckFwLPg?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
+												</div>		
+													
+										</div>
+									
+										<div class="col-lg-6">			
+											<p>Rayvision- Download & Install</p>
+											<caption>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+												
+											</caption>
+										</div>
+									</div>										
+									
+									<div class="col-lg-12 text-center alert-default">
+											<hr>
+											<a href="#" class="btn-block"><h5>Show more &nbsp;&nbsp;<span class="caret"></span></h5></a>
+											
+										</div>
+									
+								</div>		
+
+
+
+
+								
+								</div>		
+							</div>	<!-- well_white-->
+							
+							
 							
 						<div  id="diplayBlog">
-							<br /><br />
+							
 							<div class="well_white" >
 							
 								<div class="row text-center ">
@@ -340,84 +444,6 @@
 						
 						
 						
-						<!--
-						 <div class=" well" >
-						<ul class="list-inline text-center">
-							<li><div class="text-center" >
-									<span class="fa-stack fa-3x">
-									<img src="img/register.png"class="fa fa-stack-1x  fa-inverse" >
-									</span>
-									<h4 class="service-heading">Register</h4>
-								</div>
-							</li>
-							
-							<li>
-								<div class="text-center" >
-									<span class="fa-stack fa-3x">
-									<img src="img/download_software.png"class="fa fa-stack-1x  fa-inverse" >
-									</span>
-									<h4 class="service-heading">Download Software</h4>
-								</div>
-							</li>
-							
-							<li>
-								<div class="text-center" >
-									<span class="fa-stack fa-3x">
-									<img src="img/upload_project.png"class="fa fa-stack-1x  fa-inverse" >
-									</span>
-									<h4 class="service-heading">Upload Project</h4>
-								</div>
-							</li>
-							
-							<li>
-								<div class="text-center" >
-									<span class="fa-stack fa-3x">
-									<img src="img/manage_rendering.png"class="fa fa-stack-1x  fa-inverse" >
-									</span>
-									<h4 class="service-heading">Manage Rendering</h4>
-								</div>
-							</li>
-							
-							
-							<li>
-								<div class="text-center" >
-									<span class="fa-stack fa-3x">
-									<img src="img/download_output.png"class="fa fa-stack-1x  fa-inverse" >
-									</span>
-									<h4 class="service-heading">Download Output</h4>
-								</div>
-							</li>
-							
-							
-						</ul>
-						</div> -->
-						
-						 <div class=" well" >
-							 
-								
-							 
-							  <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-google-plus"></i>&nbsp;</a>
-							  <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-instagram"></i>&nbsp;</a>
-							  <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-twitter"></i>&nbsp;</a>
-							  <a href="#" class="close" data-dismiss="alert" aria-label="close"><i class="fa fa-facebook"></i>&nbsp;</a>
-							  
-							  
-								<h4>NEW RENDERFARM.GUIDE - COMING SOON!</h4>
-								<caption> January 1, 2016 | RenderFarm</caption> 
-								<br>
-								
-								<span class="label label-primary">Primary Label</span>
-								<span class="label label-success">Success Label</span>
-								<span class="label label-info">Info Label</span>
-								<span class="label label-warning">Warning Label</span>
-								<span class="label label-danger">Danger Label</span>
-								<hr>
-								<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-								</p>
-						<button class="btn btn-default btn-lg" onClick="SpecificBlog()">Read more</button>
-					
-						</div>
 					
 						
 							
