@@ -1,0 +1,37 @@
+list of videos
+
+REGISTERING
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Yiz__efKJ90?list=PLEmqqP3UwljM3lX1T_q0a1JfFUiFNsG17" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/pNUtTUlXEkE?list=PLEmqqP3UwljM3lX1T_q0a1JfFUiFNsG17" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/QT3mP_WNXuE?list=PLEmqqP3UwljM3lX1T_q0a1JfFUiFNsG17" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/HopQ-74s354?list=PLEmqqP3UwljM3lX1T_q0a1JfFUiFNsG17" frameborder="0" allowfullscreen></iframe>
+
+
+DOWNLOAD AND INSTALL
+<iframe width="640" height="360" src="https://www.youtube.com/embed/-zEclu9pksk?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/pbvfubFaEkE?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/DQzxckFwLPg?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/xi940QZk0iA?list=PLEmqqP3UwljPnz_CnQQZwnB_1ixAzBOLZ" frameborder="0" allowfullscreen></iframe>
+
+
+PROJECT UPLOAD
+<iframe width="640" height="360" src="https://www.youtube.com/embed/d6G0ZJB5AxE?list=PLEmqqP3UwljMMKFoks4sepksGrubgDo5o" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/ED9-14aQbSA?list=PLEmqqP3UwljMMKFoks4sepksGrubgDo5o" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/1WSk4AEUlbs?list=PLEmqqP3UwljMMKFoks4sepksGrubgDo5o" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/zxCB5Ebj_Q4?list=PLEmqqP3UwljMMKFoks4sepksGrubgDo5o" frameborder="0" allowfullscreen></iframe>
+
+
+
+WEB MANAGER
+<iframe width="640" height="360" src="https://www.youtube.com/embed/qj29QMnPy78?list=PLEmqqP3UwljM6PWN3VdkzzFYcOdXt3s3n" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/LG5g91eGqCg?list=PLEmqqP3UwljM6PWN3VdkzzFYcOdXt3s3n" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/eNAJi8_6gQI?list=PLEmqqP3UwljM6PWN3VdkzzFYcOdXt3s3n" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/mxf_8ldy1v8?list=PLEmqqP3UwljM6PWN3VdkzzFYcOdXt3s3n" frameborder="0" allowfullscreen></iframe>
+
+
+
+DOWNLOADING FRAMES
+<iframe width="640" height="360" src="https://www.youtube.com/embed/eqYBLaewWnI?list=PLEmqqP3UwljMdE1DCpROUH0xPf7x7Jv_Z" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/XBgMPwKzR40?list=PLEmqqP3UwljMdE1DCpROUH0xPf7x7Jv_Z" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Vu1V73MMNSQ?list=PLEmqqP3UwljMdE1DCpROUH0xPf7x7Jv_Z" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/89aaLzWN09o?list=PLEmqqP3UwljMdE1DCpROUH0xPf7x7Jv_Z" frameborder="0" allowfullscreen></iframe>

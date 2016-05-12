@@ -61,40 +61,40 @@
 			
 			
 			function price() {
-			   document.getElementById('hover_explanation').innerHTML = "* Lowest priority price/per GHz-hour<br><br>" +
+			   document.getElementById('hover_explanation').innerHTML = "<h4>Description:</h4>* Lowest priority price/per GHz-hour<br><br>" +
 			   "* Medium priority price/per GHz-hour<br><br>" +
 			   "* Highest priority price/per GHz-hour<br><br>"
 				 ;
 
 			}
 			function availability() {
-			   document.getElementById('hover_explanation').innerHTML = "How many nodes are available to the clients, are there queues"
+			   document.getElementById('hover_explanation').innerHTML = "<h4>Description:</h4>How many nodes are available to the clients, are there queues"
 				 ;
 
 			}
 			
 			
 			function TutorialsFAQHelp() {
-			   document.getElementById('hover_explanation').innerHTML = "Availability of video tutorial, quality of manuals and help sections on web page"
+			   document.getElementById('hover_explanation').innerHTML = "<h4>Description:</h4>Availability of video tutorial, quality of manuals and help sections on web page"
 				 ;
 
 			}
 			
 			function supportContact() {
-			   document.getElementById('hover_explanation').innerHTML = "Quality of support team, availability and level of professionalism"
+			   document.getElementById('hover_explanation').innerHTML = "<h4>Description:</h4>Quality of support team, availability and level of professionalism"
 				 ;
 
 			}
 			
 			function usability(){
-			   document.getElementById('hover_explanation').innerHTML = "Subjective overall user's experience, extra features, automation"
+			   document.getElementById('hover_explanation').innerHTML = "<h4>Description:</h4>Subjective overall user's experience, extra features, automation"
 				 ;
 
 			}
 
 			function normal() {
 				document.getElementById('hover_explanation').innerHTML = 
-				"Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.";
+				"<h4>Description:</h4>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. ";
 			}
         </script>
 
@@ -102,7 +102,7 @@
 
 	</head>
 
-	<body id="page-top" class="index"  style="background-color:#EFEFEF;"  onload="showBLogs()">
+	<body id="page-top" class="bg-maze" onload="showBLogs()">
 
 		<!-- Navigation -->
 		<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#000	;">
@@ -220,13 +220,14 @@
 						
 							<div  id="farmWizard">
 							
-								<div class=" well" > 
+								<div class="" > 
 								<img src="img/farmy.png" class="img-thumbnail">
 										<h2>Farm For you wizard!</h2>
-										<hr>
+										
 									<form id="farmForm" action="">
 										<div class="row">
 											<div class="col-lg-5">
+													<br>
 													<h5> Choose your 3D Software:</h5> 
 													
 													<input type="checkbox" name="vehicle" value="Bike"> 3ds Max<br>
@@ -237,7 +238,7 @@
 													<input type="checkbox" name="vehicle" value="Car"> Blender<br> 
 											</div>
 											
-											<div class="col-lg-6">
+											<div class="col-lg-6"><br>
 													<h5> Choose the priority of your render:</h5> 
 												
 														
@@ -251,19 +252,19 @@
 											<div class="col-lg-5">
 													<h5> What is important for you:</h5> 
 												
-													<b onmouseover="price()" onmouseout="normal()">Price:</b><br/>
+													<b onmouseover="price()" onmouseout="normal()" class="cursor_hover">Price:</b><br/>
 													<input type="radio" class="star" name="price" value="0.10" /><input type="radio" class="star" name="price" value="0.20" /><input type="radio" class="star" name="price" value="0.30" /><input type="radio" class="star" name="price" value="0.40" /><input type="radio" class="star" name="price" value="0.50" /><br/><br/>
 
-													<b  onmouseover="availability()" onmouseout="normal()">Availability:</b><br/>
+													<b  onmouseover="availability()" onmouseout="normal()" class="cursor_hover">Availability:</b><br/>
 													<input type="radio" class="star" name="cp" value="0.10" /><input type="radio" class="star" name="cp" value="0.20" /><input type="radio" class="star" name="cp" value="0.30" /><input type="radio" class="star" name="cp" value="0.40" /><input type="radio" class="star" name="cp" value="0.50" /><br/><br/>
 
-													<b onmouseover="TutorialsFAQHelp()" onmouseout="normal()">Tutorials/FAQ/Help section:</b><br/>
+													<b onmouseover="TutorialsFAQHelp()" onmouseout="normal()" class="cursor_hover">Tutorials/FAQ/Help section:</b><br/>
 													<input type="radio" class="star" name="faq" value="0.10" /><input type="radio" class="star" name="faq" value="0.20" /><input type="radio" class="star" name="faq" value="0.30" /><input type="radio" class="star" name="faq" value="0.40" /><input type="radio" class="star" name="faq" value="0.50" /><br/><br/>
 
-													<b onmouseover="supportContact()" onmouseout="normal()">Human support/contact:</b><br/>
+													<b onmouseover="supportContact()" onmouseout="normal()" class="cursor_hover">Human support/contact:</b><br/>
 													<input type="radio" class="star" name="support" value="0.10" /><input type="radio" class="star" name="support" value="0.20" /><input type="radio" class="star" name="support" value="0.30" /><input type="radio" class="star" name="support" value="0.40" /><input type="radio" class="star" name="support" value="0.50" /><br/><br/>
 
-													<b onmouseover="usability()" onmouseout="normal()">Usability:</b><br/>
+													<b onmouseover="usability()" onmouseout="normal()" class="cursor_hover">Usability:</b><br/>
 													<input type="radio" class="star" name="fetures" value="0.10" /><input type="radio" class="star" name="fetures" value="0.20" /><input type="radio" class="star" name="fetures" value="0.30" /><input type="radio" class="star" name="fetures" value="0.40" /><input type="radio" class="star" name="fetures" value="0.50" /><br/><br/>
 													<input onclick="(function () {
 																
@@ -276,13 +277,13 @@
 											
 											<div id="rating"></div>
 										
-													<div class="col-lg-6">
-														<hr>
-														<div id="hover_explanation">
+													<div class="col-lg-7"><br>
+														
+														<div id="hover_explanation" class=" well">
 														
 														
-														<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-														Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+														<h4>Description:</h4><p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
+														
 														</p>
 														</div>
 													</div>
@@ -290,23 +291,17 @@
 
 										</div>
 									</form>
-										<hr>
-										
-										<p>Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-										Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit. Lorem ipsum dolor sit amet, sectetur adipisicing elit.
-										</p>
-										<button class="btn btn-default btn-lg" onClick="SpecificBlog()">Read more</button>
-							
+									
 								</div>
 							</div>
 						</div>
-							
+						
 			</div>
-			
+			<br />	<br />	<br />	
 			 </div>
 	   </div>
 
-		<footer  style="background-color:#262626;margin-top:50px" >
+		<footer  class="bg-footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4">
